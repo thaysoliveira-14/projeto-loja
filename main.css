@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates';
+}
+
+body {
+    background-color: #cccccc48;
+}
+
+header {
+    background-color: rgb(40, 196, 19);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 16px 0px;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+header div li {
+    list-style: none;
+    text-align: right;
+    padding: 4px 0px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+}
+
+header div li:active a {
+    text-decoration: underline;
+}
+
+main {
+    width: 85vw;
+    margin: 0 auto 64px auto;
+}
+
+section {
+    width: 100%;
+    margin: 36px 0;
+}
+
+section img {
+    width: 100%;
+}
+
+section h2 {
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgb(40, 196, 19);
+    color: rgb(21, 104, 10);
+}
+
+#sobre p {
+    margin-top: 16px;
+    text-align: justify;
+}
+
+#produtos img {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+#produtos ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#produtos p {
+    margin: 12px 0;
+}
+
+#produtos button {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(40, 196, 19);
+    border: none;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(40, 196, 19);
+    padding: 16px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Responsividade */
+
+/*Estilo para Tablet de 641px até 1023px */
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    
+    header ul li {
+        display: inline;
+        margin-right: 8px;
+    }
+
+    #produtos ul {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+/* Estilo para Desktop a partir de 1024px */
+
+@media screen and (min-width: 1024px) {
+
+    header div {
+        max-width: 960px;
+    }
+
+    main {
+        max-width: 960px;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sobre img {
+        width: 40%;
+        margin-right: 36px;
+    }
+
+    #sobre h2 {
+        margin: 0px;
+    }
+
+    #produtos ul {
+        display: grid;
+        grid-template-columns: repeat(4, 24.5%);
+        column-gap: 6px;
+    }
+    
+    #produtos button:hover {
+        background-color: rgb(21, 104, 10);
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
